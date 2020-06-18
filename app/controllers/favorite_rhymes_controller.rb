@@ -1,0 +1,3 @@
+class FavoriteRhymesController < ApplicationController
+
+end

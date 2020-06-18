@@ -1,0 +1,50 @@
+<div class= "index-content">
+<div class= "name"><h1>  Hi <%= @user.name %>! 👋</h1></div>
+
+
+    <%= flash[:errors] if flash[:errors]%>
+
+
+<div class = "age"><h2> You are <%= @user.age %> years old!</h2></div>
+
+
+
+<h2> Your Favorite Books: </h2>
+
+<% if @user.books.empty? %>
+    <p> You have no favorite books yet. </p>
+<% else %>   
+    <% @user.books.each do |book| %> 
+        <%= link_to book_path(book) do %>
+            <%= image_tag "#{asset_path book.img_url}", class: "img-link" %>
+        <% end %>
+    <% end %> 
+<% end %>
+
+<%# button_to "See All Books 📚", books_path,  method: :get %>
+
+
+
+<h2> Your Favorite Nursery Rhymes: </h2>
+
+<% if @user.rhymes.empty? %>
+<p> You have no favorite nursery rhymes yet. </p>
+<% else %>
+    <% @user.rhymes.each do |rhyme| %> 
+            <%= link_to rhyme_path(rhyme) do %>
+                <%= image_tag "#{asset_path rhyme.img_url}", class: "img-link" %>
+            <% end %>
+    <% end %> 
+    
+<% end %><br>
+
+<%# button_to "See All Nursery Rhymes 🥁", rhymes_path,  method: :get %>
+
+<div class="user-buttons">
+<%= button_to "Edit Your Account", edit_user_path(@user),  method: :get, class: "user-button edit-account" %>
+<%= button_to "Delete Your Account", user_path(@user),  method: :delete, class: "user-button delete-account" %>
+
+</div>
+
+</div>
+

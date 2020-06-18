@@ -1,0 +1,26 @@
+<div class="index-content">
+
+    <div class="title">
+        <h1> Nursery Rhymes 🥁 </h1>
+    </div>
+
+    <% @categories.each do |category| %>
+        <h2><%= category.name %>:</h2>
+
+        <% category.rhymes.each do |rhyme|  %>
+            <%= link_to rhyme_path(rhyme) do %>
+                <%= image_tag "#{asset_path rhyme.img_url}", class: "img-link" %>
+            <% end %>
+        <% end %>
+
+    <% end %>
+</div>
+
+   
+
+   
+   
+
+
+
+

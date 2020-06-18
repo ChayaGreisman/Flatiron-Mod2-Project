@@ -1,0 +1,27 @@
+<div class="index-content">
+    <div class="title">
+        <h1> Books 📚</h1>
+    </div>
+
+    <% @categories.each do |category| %>
+        <h2><%= category.name %>:</h2>
+    
+        <% category.books.each do |book|  %>
+            <%= link_to book_path(book) do %>
+                <%= image_tag "#{asset_path book.img_url}", class: "img-link" %>
+            <% end %>
+        <% end %>
+    
+
+    <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+ 

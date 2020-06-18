@@ -1,0 +1,271 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#navbar {
+  height: 50px;
+  width: 100vw;
+  background: #C9DAF8;
+  margin: 0;
+  
+}
+
+#navbar:hover {
+  background: rgb(221, 230, 247);
+  padding-top: 10px;
+
+}
+
+
+.nav-element {
+  font-family: "Arial";
+  display: inline-block;
+  padding: 10px 20px 0px 20px;
+  color: #02111E;
+}
+
+
+
+
+.right-element {
+  position: absolute;
+  right: 0;
+}
+
+a ,a:visited {
+    /* color: white; */
+    color: #02111E;
+    text-decoration: none;
+}
+
+#background {
+  color: #C9DAF8;
+  background-image: url("https://media1.giphy.com/media/UYBDCJjwOd9Re/giphy.gif?cid=6104955e52424d41f5846bce35cff0ac939f2b60d0239d64&rid=giphy.gif"); 
+  background-attachment: fixed;
+  background-position: center top;
+  min-height: 100vh;
+}
+
+#logo {
+  padding-top: 40px;
+  width: 100vw;
+}
+
+.home-button {
+  display: inline-block;
+  background-image: linear-gradient(to right, #77A1D3 0%, #C9DAF8 51%, rgb(220, 229, 245) 100%);
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 20px 50px 20px 50px;
+  font-size: 25px;
+  color: #02111E;
+}
+.home-button:hover { 
+  background-image: linear-gradient(to right, rgb(220, 229, 245) 0%, #C9DAF8 100%);
+}
+
+
+.home-button:active{ 
+  width: 210px;
+  height: 210px;
+}
+
+form.button_to {
+  display: inline-block;
+}
+
+
+.home-buttons-container {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.img-link {
+  width: 200px;
+}
+
+.index-content {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.title {
+  background: rgba(128, 128, 128, 0.445);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* font-weight: 300; */
+  /* border: 5px solid grey; */
+  font-size: 25px;
+  color: #FDE596;
+  text-align: center;
+}
+
+.login-form, .new-user-form, .edit-user-form {
+  background: rgb(25, 24, 36);
+  margin: 50px 20px 20px 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 35px;
+}
+
+input#username {
+  height: 80px;
+  width: 400px;
+}
+
+
+input[type="text" i]{
+  font-size: 30px;
+}
+
+input.submit-button {
+  background: #FDE596;
+  color: #02111E;
+  height: 85px;
+  width: 115px;
+  border-radius: 5px;
+  transform: translateY(-5px);
+  font-size: medium;
+}
+
+form {
+  vertical-align: baseline;
+}
+
+.login-button-form {
+  width: 100%;
+  min-width: 550px;
+  display: block;
+  padding-left: 50px;
+}
+
+.form-element {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.create-edit-button {
+  margin-top: 20px;
+}
+
+input#user_age.form-element{
+  font-size: 35px;
+  width: 200px;
+} 
+
+
+.video {
+text-align: center;
+width: 100vw;
+margin-top: 45px;
+margin-bottom: 30px;
+}
+
+.show-buttons {
+  text-align: center;
+  width: 100vw;
+  padding-bottom: 60px;
+}
+
+input.fav-button {
+  background-image: linear-gradient(to right, #77A1D3 0%, #C9DAF8 51%, rgb(220, 229, 245) 100%);
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 20px 50px 20px 50px;
+  font-size: 32px;
+  color: #02111E;
+}
+
+input.fav-button:hover {
+  background: rgb(174, 198, 238);
+  width: 220px;
+  height: 220px;
+
+}
+
+
+.name {
+  background: rgba(128, 128, 128, 0.445);
+  font-size: 40px;
+  font-family: 'Trebuchet MS';
+  padding-top: 40px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
+.age {
+  color: #FDE596;
+  margin-bottom: 40px;
+}
+
+.user-buttons {
+  margin-top: 40px;
+}
+
+
+.user-button {
+  color: #02111E;
+  height: 85px;
+  width: 175px;
+  border-radius: 5px;
+  font-size: medium;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.edit-account {
+ background: #FDE596;
+ border: 1px solid #FDE596;
+ background-image: linear-gradient(-180deg, rgb(243, 231, 190) 0%, rgb(247, 218, 122) 100%);
+ box-shadow: 0 1rem 1.25rem 0 rgba(117, 121, 131, 0.5),
+             0 -0.25rem 1.5rem rgb(241, 199, 59) inset,
+             0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+             0 0.25rem 0.5rem 0 rgb(218, 203, 157) inset;
+}
+
+
+.delete-account {	
+	border: 1px solid rgb(236, 93, 93);
+	background-image: linear-gradient(-180deg, rgb(212, 93, 93) 0%, rgb(236, 73, 73) 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(117, 121, 131, 0.5),
+							0 -0.25rem 1.5rem rgb(192, 43, 43) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(212, 93, 93) inset;
+}
+
+
+
+.music {
+  text-align: center;
+  margin-top: 40px;
+}

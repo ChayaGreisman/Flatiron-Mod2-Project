@@ -1,0 +1,21 @@
+<div class="title"><h1>Login:</h1></div>
+
+
+<div class="login-form">
+
+    <% if flash[:failed] %>
+        <%= flash[:failed] %><br><br>
+    <% end %>
+
+    <%= form_tag find_user_path, method: "get" do %>
+
+        <label> Username:</label>
+ <div class= "login-button-form">
+        <%= text_field_tag :username%>
+
+        <%= submit_tag "Login", class: "submit-button" %>
+</div>
+    <% end %>
+</div>
+
+

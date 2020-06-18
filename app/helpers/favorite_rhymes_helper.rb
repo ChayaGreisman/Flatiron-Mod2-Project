@@ -1,0 +1,2 @@
+module FavoriteRhymesHelper
+end

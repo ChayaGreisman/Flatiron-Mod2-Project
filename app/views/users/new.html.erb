@@ -1,0 +1,10 @@
+<div class = "title"><h1>Create A New User Account</h1></div>
+<div class="new-user-form">
+<% if flash[:errors] %>
+  <% flash[:errors].each do |msg| %>
+    <h4>OOPS! <%= msg %></h4>
+  <% end %>
+<% end %>
+
+<%= render 'form' %>
+</div>

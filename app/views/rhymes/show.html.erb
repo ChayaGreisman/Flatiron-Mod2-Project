@@ -1,0 +1,20 @@
+
+<div class="title show">
+<h1> 
+  <%= @rhyme.title %>
+</h1>
+</div>
+
+<div class="video">
+<iframe width="840" height="465" src= <%="#{@rhyme.video_url}"%>  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<%# button_to "All Rhymes 📚", rhymes_path, method: :get %>
+
+<div class = "show-buttons">
+<% if FavoriteRhyme.find_by(user_id: @user.id, rhyme_id: @rhyme.id) %>
+  <%= button_to "Unfavorite ❌", {controller: "rhymes", action: "favorite"}, {class: "fav-button"} %>
+<% else %>
+  <%= button_to "Favorite ⭐️", {controller: "rhymes", action: "favorite"}, {class: "fav-button"} %>
+<% end %>
+</div>

@@ -1,0 +1,21 @@
+
+<div class="title show">
+<h1> 
+<%= @book.title %>
+</h1>
+<h3> Written by: <%= @book.author %></h3>
+</div>
+
+<div class="video">
+<iframe width="840" height="465" src= <%="#{@book.video_url}"%>  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<%# button_to "All Books 📚", books_path, method: :get %>
+
+<div class = "show-buttons">
+<% if FavoriteBook.find_by(user_id: @user.id, book_id: @book.id) %>
+  <%= button_to "Unfavorite ❌", {controller: "books", action: "favorite"}, {class: "fav-button"} %>
+<% else %>
+  <%= button_to "Favorite ⭐️", {controller: "books", action: "favorite"}, {class:"fav-button"} %>
+<% end %>
+</div>
