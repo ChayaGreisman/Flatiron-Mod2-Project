@@ -4,7 +4,7 @@
 
 # Install Instructions
 
-To open and run this application, fork and clone this repo. Run 'bundle install', then 'rails db:migrate' and 'rails db:seed'. Start up a rails server with 'rails s' and you should be good to view this app at http://localhost:3000/.
+To open and run this application, fork and clone this repo. Run 'bundle install'. Start up a rails server with 'rails s' and you should be good to view this app at http://localhost:3000/.
 
 
 # Description
