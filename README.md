@@ -12,6 +12,8 @@ To open and run this application, fork and clone this repo. Run 'bundle install'
 Users can login or create an account. Once logged in, they can view books and nursery rhymes by category. They can add and remove a book or nursery rhyme to their favorites, as well as edit and delete their account.
 
 
+Video Demo: https://youtu.be/A7p3N1Fk8JE
+
 ©️ Malcolm Gourdine & Chaya Greisman
 
 
